@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:awesome_cats/widgets/app_bar_text.dart';
 import 'package:awesome_cats/utils/url.dart';
 
 class CatDetailsPage extends StatelessWidget {
@@ -20,7 +21,7 @@ class CatDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Kitty'),
+        title: const AppBarText(text: 'This... Sooo cuuute!'),
       ),
       body: Center(child: _buildImage(assetPath)),
     );
